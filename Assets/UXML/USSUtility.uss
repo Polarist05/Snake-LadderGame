@@ -1,0 +1,27 @@
+:root {
+    --puple: rgb(63, 56, 112);
+    --green: rgb(0, 180, 0);
+}
+
+.bg-color {
+    border-left-color: rgb(63, 56, 112);
+    border-right-color: rgb(63, 56, 112);
+    border-top-color: rgb(63, 56, 112);
+    border-bottom-color: rgb(63, 56, 112);
+    background-color: var(--puple);
+}
+
+.green-bg {
+    background-color: var(--green);
+}
+
+.white-border {
+    border-left-color: rgba(255, 255, 255, 255);
+    border-right-color: rgba(255, 255, 255, 255);
+    border-top-color: rgba(255, 255, 255, 255);
+    border-bottom-color: rgba(255, 255, 255, 255);
+    border-left-width: 5px;
+    border-right-width: 5px;
+    border-top-width: 5px;
+    border-bottom-width: 5px;
+}

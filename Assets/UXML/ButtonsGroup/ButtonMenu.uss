@@ -1,0 +1,23 @@
+.button {
+    width: 60px;
+    height: 60px;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    background-color: rgba(14, 14, 14, 0.7);
+    transition-property: scale, background-color;
+    transition-duration: 0.5s 0s;
+    transition-timing-function: ease-out, ease-in-out;
+    justify-content: center;
+    align-items: center;
+    border-left-color: rgb(255, 255, 255);
+    border-right-color: rgb(255, 255, 255);
+    border-top-color: rgb(255, 255, 255);
+    border-bottom-color: rgb(255, 255, 255);
+}
+
+.button:hover {
+    background-color: rgba(14, 14, 14, 0.84);
+    scale: 1.1 1.1;
+}

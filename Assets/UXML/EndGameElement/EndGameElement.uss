@@ -1,0 +1,14 @@
+.button {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    height: 40px;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out-elastic;
+}
+
+.button:hover {
+    scale: 1.05 1.05;
+    background-color: rgba(0, 224, 0, 255);
+}

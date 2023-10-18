@@ -1,0 +1,55 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using UnityEngine;
+
+public class GameUtility 
+{
+//    public static GameUtility instance = new GameUtility();
+    public static string SimpliflyString(string strLanguage)
+    {
+        return strLanguage.Replace("\r", string.Empty)
+            .Replace("\n", string.Empty)
+            .Replace("\t", string.Empty)
+            .Replace(" ", string.Empty)
+            .ToLower();
+    }
+    public static string sampleString = "setup : {\r\n\tcode : code123,\r\n\tmap : map01,\r\n\tcolors : [green, red, blue, yellow, purple, white],\r\n\tevents : [P6B2, P17F1, P29B2, P47F1, P63B2, P79S1, P88B2, P94F2]\r\n},\r\nwalks:[\r\n\tplayer 0 walk : { \r\n\t\troll 6,\r\n\t\tplayer 0 move_to 6,\r\n\t\tactions:[\r\n\t\t\t{\r\n\t\t\t\tevent :{ player 0 backward 2},\r\n\t\t\t\tplayer 0 move_to 4\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\tladder ,\r\n\t\t\t\tplayer 0 move_to 37\r\n\t\t\t}\r\n\t\t]\r\n\t},\r\n\tplayer 1 walk : { \r\n\t\troll 5,\r\n\t\tplayer 1 move_to 5,\r\n\t\tactions:[]\r\n\t},\r\n\tplayer 2 walk : { \r\n\t\troll 5,\r\n\t\tplayer 2 move_to 5,\r\n\t\tactions:[]\r\n\t},\r\n\tplayer 3 walk : { \r\n\t\troll 6,\r\n\t\tplayer 3 move_to 6,\r\n\t\tactions:[\r\n\t\t\t{\r\n\t\t\t\tevent :{ player 3 backward 2},\r\n\t\t\t\tplayer 3 move_to 4\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\tladder ,\r\n\t\t\t\tplayer 3 move_to 37\r\n\t\t\t}\r\n\t\t]\r\n\t},\r\n\tplayer 4 walk : { \r\n\t\troll 6,\r\n\t\tplayer 4 move_to 6,\r\n\t\tactions:[\r\n\t\t\t{\r\n\t\t\t\tevent :{ player 4 backward 2},\r\n\t\t\t\tplayer 4 move_to 4\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\tladder ,\r\n\t\t\t\tplayer 4 move_to 37\r\n\t\t\t}\r\n\t\t]\r\n\t},\r\n\tplayer 5 walk : { \r\n\t\troll 5,\r\n\t\tplayer 5 move_to 5,\r\n\t\tactions:[]\r\n\t},\r\n\tplayer 0 walk : { \r\n\t\troll 1,\r\n\t\tplayer 0 move_to 38,\r\n\t\tactions:[]\r\n\t},\r\n\tplayer 1 walk : { \r\n\t\troll 1,\r\n\t\tplayer 1 move_to 6,\r\n\t\tactions:[\r\n\t\t\t{\r\n\t\t\t\tevent :{ player 1 backward 2},\r\n\t\t\t\tplayer 1 move_to 4\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\tladder ,\r\n\t\t\t\tplayer 1 move_to 37\r\n\t\t\t}\r\n\t\t]\r\n\t},\r\n\tplayer 2 walk : { \r\n\t\troll 5,\r\n\t\tplayer 2 move_to 10,\r\n\t\tactions:[]\r\n\t},\r\n\tplayer 3 walk : { \r\n\t\troll 4,\r\n\t\tplayer 3 move_to 41,\r\n\t\tactions:[]\r\n\t},\r\n\tplayer 4 walk : { \r\n\t\troll 5,\r\n\t\tplayer 4 move_to 42,\r\n\t\tactions:[]\r\n\t},\r\n\tplayer 5 walk : { \r\n\t\troll 2,\r\n\t\tplayer 5 move_to 7,\r\n\t\tactions:[]\r\n\t},\r\n\tplayer 0 walk : { \r\n\t\troll 6,\r\n\t\tplayer 0 move_to 44,\r\n\t\tactions:[]\r\n\t},\r\n\tplayer 1 walk : { \r\n\t\troll 5,\r\n\t\tplayer 1 move_to 42,\r\n\t\tactions:[]\r\n\t},\r\n\tplayer 2 walk : { \r\n\t\troll 3,\r\n\t\tplayer 2 move_to 13,\r\n\t\tactions:[]\r\n\t},\r\n\tplayer 3 walk : { \r\n\t\troll 2,\r\n\t\tplayer 3 move_to 43,\r\n\t\tactions:[]\r\n\t},\r\n\tplayer 4 walk : { \r\n\t\troll 6,\r\n\t\tplayer 4 move_to 48,\r\n\t\tactions:[]\r\n\t},\r\n\tplayer 5 walk : { \r\n\t\troll 1,\r\n\t\tplayer 5 move_to 8,\r\n\t\tactions:[]\r\n\t},\r\n\tplayer 0 walk : { \r\n\t\troll 1,\r\n\t\tplayer 0 move_to 45,\r\n\t\tactions:[]\r\n\t},\r\n\tplayer 1 walk : { \r\n\t\troll 1,\r\n\t\tplayer 1 move_to 43,\r\n\t\tactions:[]\r\n\t},\r\n\tplayer 2 walk : { \r\n\t\troll 1,\r\n\t\tplayer 2 move_to 14,\r\n\t\tactions:[]\r\n\t},\r\n\tplayer 3 walk : { \r\n\t\troll 4,\r\n\t\tplayer 3 move_to 47,\r\n\t\tactions:[\r\n\t\t\t{\r\n\t\t\t\tevent :{ player 3 forward 1},\r\n\t\t\t\tplayer 3 move_to 48\r\n\t\t\t}\r\n\t\t]\r\n\t},\r\n\tplayer 4 walk : { \r\n\t\troll 2,\r\n\t\tplayer 4 move_to 50,\r\n\t\tactions:[]\r\n\t},\r\n\tplayer 5 walk : { \r\n\t\troll 2,\r\n\t\tplayer 5 move_to 10,\r\n\t\tactions:[]\r\n\t},\r\n\tplayer 0 walk : { \r\n\t\troll 1,\r\n\t\tplayer 0 move_to 46,\r\n\t\tactions:[]\r\n\t},\r\n\tplayer 1 walk : { \r\n\t\troll 1,\r\n\t\tplayer 1 move_to 44,\r\n\t\tactions:[]\r\n\t},\r\n\tplayer 2 walk : { \r\n\t\troll 1,\r\n\t\tplayer 2 move_to 15,\r\n\t\tactions:[]\r\n\t},\r\n\tplayer 3 walk : { \r\n\t\troll 2,\r\n\t\tplayer 3 move_to 50,\r\n\t\tactions:[]\r\n\t},\r\n\tplayer 4 walk : { \r\n\t\troll 2,\r\n\t\tplayer 4 move_to 52,\r\n\t\tactions:[]\r\n\t},\r\n\tplayer 5 walk : { \r\n\t\troll 2,\r\n\t\tplayer 5 move_to 12,\r\n\t\tactions:[]\r\n\t},\r\n\tplayer 0 walk : { \r\n\t\troll 2,\r\n\t\tplayer 0 move_to 48,\r\n\t\tactions:[]\r\n\t},\r\n\tplayer 1 walk : { \r\n\t\troll 6,\r\n\t\tplayer 1 move_to 50,\r\n\t\tactions:[]\r\n\t},\r\n\tplayer 2 walk : { \r\n\t\troll 6,\r\n\t\tplayer 2 move_to 21,\r\n\t\tactions:[]\r\n\t},\r\n\tplayer 3 walk : { \r\n\t\troll 6,\r\n\t\tplayer 3 move_to 56,\r\n\t\tactions:[]\r\n\t},\r\n\tplayer 4 walk : { \r\n\t\troll 4,\r\n\t\tplayer 4 move_to 56,\r\n\t\tactions:[]\r\n\t},\r\n\tplayer 5 walk : { \r\n\t\troll 4,\r\n\t\tplayer 5 move_to 16,\r\n\t\tactions:[]\r\n\t},\r\n\tplayer 0 walk : { \r\n\t\troll 4,\r\n\t\tplayer 0 move_to 52,\r\n\t\tactions:[]\r\n\t},\r\n\tplayer 1 walk : { \r\n\t\troll 1,\r\n\t\tplayer 1 move_to 51,\r\n\t\tactions:[\r\n\t\t\t{\r\n\t\t\t\tladder ,\r\n\t\t\t\tplayer 1 move_to 70\r\n\t\t\t}\r\n\t\t]\r\n\t},\r\n\tplayer 2 walk : { \r\n\t\troll 2,\r\n\t\tplayer 2 move_to 23,\r\n\t\tactions:[]\r\n\t},\r\n\tplayer 3 walk : { \r\n\t\troll 2,\r\n\t\tplayer 3 move_to 58,\r\n\t\tactions:[]\r\n\t},\r\n\tplayer 4 walk : { \r\n\t\troll 2,\r\n\t\tplayer 4 move_to 58,\r\n\t\tactions:[]\r\n\t},\r\n\tplayer 5 walk : { \r\n\t\troll 2,\r\n\t\tplayer 5 move_to 18,\r\n\t\tactions:[]\r\n\t},\r\n\tplayer 0 walk : { \r\n\t\troll 2,\r\n\t\tplayer 0 move_to 54,\r\n\t\tactions:[]\r\n\t},\r\n\tplayer 1 walk : { \r\n\t\troll 6,\r\n\t\tplayer 1 move_to 76,\r\n\t\tactions:[]\r\n\t},\r\n\tplayer 2 walk : { \r\n\t\troll 5,\r\n\t\tplayer 2 move_to 28,\r\n\t\tactions:[]\r\n\t},\r\n\tplayer 3 walk : { \r\n\t\troll 5,\r\n\t\tplayer 3 move_to 63,\r\n\t\tactions:[\r\n\t\t\t{\r\n\t\t\t\tevent :{ player 3 backward 2},\r\n\t\t\t\tplayer 3 move_to 61\r\n\t\t\t}\r\n\t\t]\r\n\t},\r\n\tplayer 4 walk : { \r\n\t\troll 5,\r\n\t\tplayer 4 move_to 63,\r\n\t\tactions:[\r\n\t\t\t{\r\n\t\t\t\tevent :{ player 4 backward 2},\r\n\t\t\t\tplayer 4 move_to 61\r\n\t\t\t}\r\n\t\t]\r\n\t},\r\n\tplayer 5 walk : { \r\n\t\troll 5,\r\n\t\tplayer 5 move_to 23,\r\n\t\tactions:[]\r\n\t},\r\n\tplayer 0 walk : { \r\n\t\troll 6,\r\n\t\tplayer 0 move_to 60,\r\n\t\tactions:[]\r\n\t},\r\n\tplayer 1 walk : { \r\n\t\troll 2,\r\n\t\tplayer 1 move_to 78,\r\n\t\tactions:[]\r\n\t},\r\n\tplayer 2 walk : { \r\n\t\troll 4,\r\n\t\tplayer 2 move_to 32,\r\n\t\tactions:[]\r\n\t},\r\n\tplayer 3 walk : { \r\n\t\troll 4,\r\n\t\tplayer 3 move_to 65,\r\n\t\tactions:[\r\n\t\t\t{\r\n\t\t\t\tsnake ,\r\n\t\t\t\tplayer 3 move_to 35\r\n\t\t\t}\r\n\t\t]\r\n\t},\r\n\tplayer 4 walk : { \r\n\t\troll 3,\r\n\t\tplayer 4 move_to 64,\r\n\t\tactions:[]\r\n\t},\r\n\tplayer 5 walk : { \r\n\t\troll 3,\r\n\t\tplayer 5 move_to 26,\r\n\t\tactions:[]\r\n\t},\r\n\tplayer 0 walk : { \r\n\t\troll 3,\r\n\t\tplayer 0 move_to 63,\r\n\t\tactions:[\r\n\t\t\t{\r\n\t\t\t\tevent :{ player 0 backward 2},\r\n\t\t\t\tplayer 0 move_to 61\r\n\t\t\t}\r\n\t\t]\r\n\t},\r\n\tplayer 1 walk : { \r\n\t\troll 3,\r\n\t\tplayer 1 move_to 81,\r\n\t\tactions:[]\r\n\t},\r\n\tplayer 2 walk : { \r\n\t\troll 2,\r\n\t\tplayer 2 move_to 34,\r\n\t\tactions:[]\r\n\t},\r\n\tplayer 3 walk : { \r\n\t\troll 6,\r\n\t\tplayer 3 move_to 41,\r\n\t\tactions:[]\r\n\t},\r\n\tplayer 4 walk : { \r\n\t\troll 3,\r\n\t\tplayer 4 move_to 67,\r\n\t\tactions:[]\r\n\t},\r\n\tplayer 5 walk : { \r\n\t\troll 5,\r\n\t\tplayer 5 move_to 31,\r\n\t\tactions:[]\r\n\t},\r\n\tplayer 0 walk : { \r\n\t\troll 5,\r\n\t\tplayer 0 move_to 66,\r\n\t\tactions:[]\r\n\t},\r\n\tplayer 1 walk : { \r\n\t\troll 3,\r\n\t\tplayer 1 move_to 84,\r\n\t\tactions:[]\r\n\t},\r\n\tplayer 2 walk : { \r\n\t\troll 3,\r\n\t\tplayer 2 move_to 37,\r\n\t\tactions:[]\r\n\t},\r\n\tplayer 3 walk : { \r\n\t\troll 2,\r\n\t\tplayer 3 move_to 43,\r\n\t\tactions:[]\r\n\t},\r\n\tplayer 4 walk : { \r\n\t\troll 5,\r\n\t\tplayer 4 move_to 72,\r\n\t\tactions:[]\r\n\t},\r\n\tplayer 5 walk : { \r\n\t\troll 3,\r\n\t\tplayer 5 move_to 34,\r\n\t\tactions:[]\r\n\t},\r\n\tplayer 0 walk : { \r\n\t\troll 5,\r\n\t\tplayer 0 move_to 71,\r\n\t\tactions:[]\r\n\t},\r\n\tplayer 1 walk : { \r\n\t\troll 2,\r\n\t\tplayer 1 move_to 86,\r\n\t\tactions:[\r\n\t\t\t{\r\n\t\t\t\tsnake ,\r\n\t\t\t\tplayer 1 move_to 56\r\n\t\t\t}\r\n\t\t]\r\n\t},\r\n\tplayer 2 walk : { \r\n\t\troll 4,\r\n\t\tplayer 2 move_to 41,\r\n\t\tactions:[]\r\n\t},\r\n\tplayer 3 walk : { \r\n\t\troll 6,\r\n\t\tplayer 3 move_to 49,\r\n\t\tactions:[\r\n\t\t\t{\r\n\t\t\t\tladder ,\r\n\t\t\t\tplayer 3 move_to 68\r\n\t\t\t}\r\n\t\t]\r\n\t},\r\n\tplayer 4 walk : { \r\n\t\troll 2,\r\n\t\tplayer 4 move_to 74,\r\n\t\tactions:[\r\n\t\t\t{\r\n\t\t\t\tladder ,\r\n\t\t\t\tplayer 4 move_to 93\r\n\t\t\t}\r\n\t\t]\r\n\t},\r\n\tplayer 5 walk : { \r\n\t\troll 4,\r\n\t\tplayer 5 move_to 38,\r\n\t\tactions:[]\r\n\t},\r\n\tplayer 0 walk : { \r\n\t\troll 5,\r\n\t\tplayer 0 move_to 76,\r\n\t\tactions:[]\r\n\t},\r\n\tplayer 1 walk : { \r\n\t\troll 5,\r\n\t\tplayer 1 move_to 61,\r\n\t\tactions:[]\r\n\t},\r\n\tplayer 2 walk : { \r\n\t\troll 3,\r\n\t\tplayer 2 move_to 44,\r\n\t\tactions:[]\r\n\t},\r\n\tplayer 3 walk : { \r\n\t\troll 4,\r\n\t\tplayer 3 move_to 72,\r\n\t\tactions:[]\r\n\t},\r\n\tplayer 4 walk : { \r\n\t\troll 6,\r\n\t\tplayer 4 move_to 99,\r\n\t\tactions:[]\r\n\t},\r\n\tendgame\r\n]";
+    public async static Task MoveTo(GameManager manager,Pawn pawn, int position, bool stepByStep = false, bool isAnimation = true)
+    {
+        var start = pawn.currentPosition;
+        int increment = (position - start > 0) ? 1 : -1;
+        if (stepByStep && isAnimation)
+        {
+            for (int i = start; i != position; i += increment)
+            {
+                pawn.currentPosition = i + increment;
+                manager.soundManager.Play(SoundEffectType.walk);
+                Task task1 = manager.UpdatePosition(i);
+                Task task2 = manager.UpdatePosition(i + increment);
+                await Task.WhenAll(task1, task2);
+            }
+        }
+        else
+        {
+            if (isAnimation)
+            {
+                manager.soundManager.Play(increment > 0 ? SoundEffectType.ladder : SoundEffectType.snake);
+            }
+            pawn.currentPosition = position;
+            Task task1 = manager.UpdatePosition(start, isAnimation);
+            Task task2 = manager.UpdatePosition(position, isAnimation);
+            await Task.WhenAll(task1, task2);
+        }
+        manager.automataManager.ClearEdges();
+    }
+    public async static Task Move(GameManager manager,Pawn pawn, int distance, bool stepByStep = false, bool isAnimation = true)
+    {
+        if (pawn is null)
+            return;
+        var position = Math.Min(Math.Max(manager.currentPawn.currentPosition + distance, 0), 99);
+        manager.automataManager.recieveStr($"player {manager.currentTurn} move_to {position}");
+        await MoveTo(manager,pawn, position, stepByStep, isAnimation);
+    }
+}

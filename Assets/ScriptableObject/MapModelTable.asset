@@ -1,0 +1,279 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d523604089044c942a5c63d34f46f38b, type: 3}
+  m_Name: MapModelTable
+  m_EditorClassIdentifier: 
+  maps:
+  - Name: map01
+    material: {fileID: 2100000, guid: 6cd058acd1907e24082e6e2ce2db5225, type: 2}
+    eventPostion: 050000000c000000230000002a00000033000000430000004d0000005c000000
+    nonEventAction:
+    - position: 20
+      type: 3
+      eventType: 0
+      distance: 19
+    - position: 29
+      type: 3
+      eventType: 0
+      distance: 19
+    - position: 33
+      type: 3
+      eventType: 0
+      distance: 56
+    - position: 26
+      type: 2
+      eventType: 0
+      distance: 12
+    - position: 32
+      type: 2
+      eventType: 0
+      distance: 30
+    - position: 57
+      type: 2
+      eventType: 0
+      distance: 12
+    - position: 74
+      type: 2
+      eventType: 0
+      distance: 30
+    - position: 83
+      type: 2
+      eventType: 0
+      distance: 60
+    - position: 85
+      type: 2
+      eventType: 0
+      distance: 12
+    - position: 94
+      type: 2
+      eventType: 0
+      distance: 30
+  - Name: map02
+    material: {fileID: 2100000, guid: a7bf91d8cf876ca4c98eaa744f2cd8a4, type: 2}
+    eventPostion: 0d0000001800000028000000380000004c000000550000005c00000062000000
+    nonEventAction:
+    - position: 5
+      type: 3
+      eventType: 0
+      distance: 33
+    - position: 34
+      type: 3
+      eventType: 0
+      distance: 56
+    - position: 58
+      type: 3
+      eventType: 0
+      distance: 19
+    - position: 11
+      type: 2
+      eventType: 0
+      distance: 11
+    - position: 41
+      type: 2
+      eventType: 0
+      distance: 12
+    - position: 59
+      type: 2
+      eventType: 0
+      distance: 40
+    - position: 79
+      type: 2
+      eventType: 0
+      distance: 30
+    - position: 81
+      type: 2
+      eventType: 0
+      distance: 30
+    - position: 84
+      type: 2
+      eventType: 0
+      distance: 12
+    - position: 91
+      type: 2
+      eventType: 0
+      distance: 70
+  - Name: map03
+    material: {fileID: 2100000, guid: 399ff5fa46cfe76448133eb2e47a4f90, type: 2}
+    eventPostion: 05000000100000001a000000270000002a00000043000000530000005e000000
+    nonEventAction:
+    - position: 2
+      type: 3
+      eventType: 0
+      distance: 33
+    - position: 10
+      type: 3
+      eventType: 0
+      distance: 19
+    - position: 12
+      type: 3
+      eventType: 0
+      distance: 56
+    - position: 54
+      type: 3
+      eventType: 0
+      distance: 33
+    - position: 60
+      type: 3
+      eventType: 0
+      distance: 19
+    - position: 78
+      type: 3
+      eventType: 0
+      distance: 19
+    - position: 93
+      type: 2
+      eventType: 0
+      distance: 30
+    - position: 90
+      type: 2
+      eventType: 0
+      distance: 60
+    - position: 45
+      type: 2
+      eventType: 0
+      distance: 12
+    - position: 34
+      type: 2
+      eventType: 0
+      distance: 30
+  - Name: map04
+    material: {fileID: 2100000, guid: 7b9b01b40a91e9745bbc1d0864393175, type: 2}
+    eventPostion: 07000000160000002b000000310000003c00000044000000490000005c000000
+    nonEventAction:
+    - position: 2
+      type: 3
+      eventType: 0
+      distance: 18
+    - position: 14
+      type: 3
+      eventType: 0
+      distance: 33
+    - position: 24
+      type: 3
+      eventType: 0
+      distance: 18
+    - position: 29
+      type: 3
+      eventType: 0
+      distance: 56
+    - position: 44
+      type: 3
+      eventType: 0
+      distance: 33
+    - position: 94
+      type: 2
+      eventType: 0
+      distance: 12
+    - position: 96
+      type: 2
+      eventType: 0
+      distance: 30
+    - position: 81
+      type: 2
+      eventType: 0
+      distance: 60
+    - position: 76
+      type: 2
+      eventType: 0
+      distance: 30
+    - position: 31
+      type: 2
+      eventType: 0
+      distance: 30
+  - Name: map05
+    material: {fileID: 2100000, guid: 9edb0afce4829734ebff4e03216a038d, type: 2}
+    eventPostion: 04000000170000002b000000300000003c00000046000000510000005c000000
+    nonEventAction:
+    - position: 8
+      type: 3
+      eventType: 0
+      distance: 56
+    - position: 11
+      type: 3
+      eventType: 0
+      distance: 19
+    - position: 22
+      type: 3
+      eventType: 0
+      distance: 19
+    - position: 58
+      type: 3
+      eventType: 0
+      distance: 33
+    - position: 76
+      type: 3
+      eventType: 0
+      distance: 19
+    - position: 98
+      type: 2
+      eventType: 0
+      distance: 30
+    - position: 78
+      type: 2
+      eventType: 0
+      distance: 12
+    - position: 67
+      type: 2
+      eventType: 0
+      distance: 60
+    - position: 46
+      type: 2
+      eventType: 0
+      distance: 12
+    - position: 36
+      type: 2
+      eventType: 0
+      distance: 30
+  - Name: map06
+    material: {fileID: 2100000, guid: 4e8a836dc53412f42b5549263ebd0ad5, type: 2}
+    eventPostion: 06000000110000001d0000002f0000003f0000004f000000580000005e000000
+    nonEventAction:
+    - position: 4
+      type: 3
+      eventType: 0
+      distance: 33
+    - position: 20
+      type: 3
+      eventType: 0
+      distance: 33
+    - position: 49
+      type: 3
+      eventType: 0
+      distance: 19
+    - position: 51
+      type: 3
+      eventType: 0
+      distance: 19
+    - position: 74
+      type: 3
+      eventType: 0
+      distance: 19
+    - position: 25
+      type: 2
+      eventType: 0
+      distance: 12
+    - position: 33
+      type: 2
+      eventType: 0
+      distance: 12
+    - position: 65
+      type: 2
+      eventType: 0
+      distance: 30
+    - position: 86
+      type: 2
+      eventType: 0
+      distance: 30
+    - position: 98
+      type: 2
+      eventType: 0
+      distance: 60

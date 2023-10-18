@@ -1,0 +1,14 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UXML/ButtonsGroup/ButtonMenu.uss?fileID=7433441132597879392&amp;guid=08ec09d2e93e5c741a0785406caef23a&amp;type=3#GraphButton" />
+    <ui:VisualElement name="PauseWindow" style="left: 0; top: 0; right: 0; bottom: 0; position: absolute; background-color: rgba(0, 0, 0, 0.74); align-items: center; justify-content: flex-start; color: rgb(255, 255, 255); -unity-text-align: upper-center; width: 100%; height: 100%; padding-left: 36px; padding-right: 36px; padding-top: 36px; padding-bottom: 36px; font-size: 75px; -unity-font-definition: url(&apos;project://database/Assets/Font/Anton-Regular%20SDF.asset?fileID=11400000&amp;guid=f85e5555719caad48ad265cfd6fed2eb&amp;type=2#Anton-Regular SDF&apos;);">
+        <ui:Label text="PAUSE" display-tooltip-when-elided="true" />
+    </ui:VisualElement>
+    <ui:VisualElement style="top: 10px; right: 10px; position: absolute; flex-direction: row-reverse;">
+        <ui:Button display-tooltip-when-elided="true" name="PauseButton" class="button">
+            <ui:VisualElement style="background-image: url(&apos;project://database/Assets/Texture/Icon/pause.png?fileID=2800000&amp;guid=0185e88385cd5794aa65b4e5024c1db3&amp;type=3#pause&apos;); -unity-background-scale-mode: scale-to-fit; width: 80%; height: 100%;" />
+        </ui:Button>
+        <ui:Button display-tooltip-when-elided="true" name="GraphBtn" class="button">
+            <ui:VisualElement style="width: 100%; height: 100%; background-image: url(&apos;project://database/Assets/Texture/Icon/process.png?fileID=2800000&amp;guid=b7248d4a8b9c13443bc9d2f3c0d4e342&amp;type=3#process&apos;);" />
+        </ui:Button>
+    </ui:VisualElement>
+</ui:UXML>
